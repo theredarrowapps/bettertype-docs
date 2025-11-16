@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - BetterType: AI Keyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .category {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .category-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4F46E5;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #6366F1;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .question {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question::before {
+            content: "Q:";
+            color: #6366F1;
+            font-weight: 800;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            font-size: 16px;
+            color: #515154;
+            line-height: 1.8;
+            margin-left: 30px;
+        }
+        
+        .answer::before {
+            content: "A:";
+            color: #4F46E5;
+            font-weight: 700;
+            margin-right: 10px;
+            display: inline-block;
+            margin-left: -30px;
+        }
+        
+        .answer ul, .answer ol {
+            margin: 15px 0 15px 20px;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .answer strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 3px solid #6366F1;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            margin-top: 40px;
+            border-radius: 16px;
+        }
+        
+        .footer h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 15px;
+        }
+        
+        .footer p {
+            color: #515154;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #6366F1;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: #4F46E5;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .category {
+                padding: 25px;
+            }
+            
+            .category-title {
+                font-size: 24px;
+            }
+            
+            .question {
+                font-size: 17px;
+            }
+            
+            .answer {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about BetterType AI Keyboard</p>
+    </div>
+    
+    <div class="container">
+        <!-- Getting Started -->
+        <div class="category">
+            <h2 class="category-title">Getting Started</h2>
+            
+            <div class="faq-item">
+                <div class="question">What is BetterType AI Keyboard?</div>
+                <div class="answer">BetterType AI Keyboard is an AI-powered keyboard for iOS that helps you write better across all your apps. It offers grammar correction, tone adjustment in 22+ styles, AI-powered writing assistance, and translation to 44+ languages - all directly from your keyboard.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I install the BetterType keyboard?</div>
+                <div class="answer">After downloading the app:
+                    <ol>
+                        <li>Open the BetterType app and complete the onboarding</li>
+                        <li>Go to iOS Settings → General → Keyboard → Keyboards</li>
+                        <li>Tap "Add New Keyboard"</li>
+                        <li>Select "BetterType" from the list</li>
+                        <li>Enable "Allow Full Access" for best functionality</li>
+                        <li>Tap the globe icon 🌐 in any app to switch to BetterType</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Why does the keyboard need "Full Access"?</div>
+                <div class="answer">Full Access allows BetterType to send your text to AI models for processing (grammar fixes, tone changes, translations, etc.). Without it, the keyboard cannot provide AI-powered features. Your privacy is protected - see our Privacy section below for details.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Which apps work with BetterType?</div>
+                <div class="answer">BetterType works with virtually any iOS app that accepts text input, including Instagram, WhatsApp, Telegram, Gmail, Slack, Discord, Twitter/X, LinkedIn, iMessage, Reddit, TikTok, Snapchat, Tinder, Bumble, Hinge, Notes, and many more.</div>
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="category">
+            <h2 class="category-title">Features</h2>
+            
+            <div class="faq-item">
+                <div class="question">What's the difference between the 4 main features?</div>
+                <div class="answer">
+                    <div class="highlight">
+                        <strong>Grammar Fix:</strong> Corrects spelling, grammar, and punctuation errors while preserving your original meaning and tone<br><br>
+                        <strong>Change Tone:</strong> Rewrites your text in 22 different styles (Formal, Casual, Friendly, Confident, Professional, Enthusiastic, etc.)<br><br>
+                        <strong>Ask AI:</strong> Get intelligent answers to questions or help writing content from scratch<br><br>
+                        <strong>Translation:</strong> Translate text between 44+ languages instantly
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What tones are available?</div>
+                <div class="answer">BetterType offers 22 tones across 4 categories:
+                    <ul>
+                        <li><strong>Communication:</strong> Formal, Casual, Friendly, Confident, Humble, Persuasive, Humanize, Polish</li>
+                        <li><strong>Emotional:</strong> Enthusiastic, Empathetic, Motivational, Calming, Fun, Inspirational</li>
+                        <li><strong>Creative:</strong> Storytelling, Educational, Promotional, Testimonial, Creative</li>
+                        <li><strong>Platform-Specific:</strong> Social Media, Email, Blog, Sales</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Can I control the length of responses?</div>
+                <div class="answer">Yes! Most features offer content size options:
+                    <ul>
+                        <li><strong>Short:</strong> Concise, brief responses</li>
+                        <li><strong>Default:</strong> Balanced length</li>
+                        <li><strong>Long:</strong> More detailed and comprehensive</li>
+                        <li><strong>Structured:</strong> Organized with formatting (for certain tones)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Which languages does BetterType support for translation?</div>
+                <div class="answer">BetterType supports 44+ languages including Arabic, Bengali, Bulgarian, Chinese (Simplified & Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Malay, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and many more.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Does BetterType support multiple response alternatives?</div>
+                <div class="answer">Yes! For many features, BetterType generates multiple variants of responses, allowing you to choose the option that best fits your needs.</div>
+            </div>
+        </div>
+        
+        <!-- Subscription & Pricing -->
+        <div class="category">
+            <h2 class="category-title">Subscription & Pricing</h2>
+            
+            <div class="faq-item">
+                <div class="question">What subscription tiers does BetterType offer?</div>
+                <div class="answer">BetterType offers three tiers:
+                    <ul>
+                        <li><strong>Free:</strong> Limited access to basic features</li>
+                        <li><strong>Starter:</strong> Full access to Grammar Fix and Tone Change features</li>
+                        <li><strong>Pro:</strong> All features including Ask AI (premium feature), unlimited usage, and all future features</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Is there a free trial?</div>
+                <div class="answer">Yes! New users get a 3-day free trial to experience all Pro features before committing to a subscription.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What are the payment options?</div>
+                <div class="answer">BetterType offers both monthly and yearly subscription billing. Yearly subscriptions typically offer better value with significant savings compared to monthly billing.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I cancel my subscription?</div>
+                <div class="answer">To cancel:
+                    <ol>
+                        <li>Open iOS Settings</li>
+                        <li>Tap your Apple ID at the top</li>
+                        <li>Go to Subscriptions</li>
+                        <li>Select BetterType</li>
+                        <li>Tap "Cancel Subscription"</li>
+                    </ol>
+                    Your access continues until the end of your current billing period.
+                </div>
+            </div>
+            
+
+        </div>
+        
+        <!-- Privacy & Security -->
+        <div class="category">
+            <h2 class="category-title">Privacy & Security</h2>
+            
+            <div class="faq-item">
+                <div class="question">Is my data private and secure?</div>
+                <div class="answer">Yes. BetterType offers two privacy modes:
+                    <div class="highlight">
+                        <strong>Privacy Mode:</strong> Maximum privacy with no usage data collection<br><br>
+                        <strong>Help Improve Mode:</strong> Anonymous usage data to improve the product (no sensitive content stored)
+                    </div>
+                    Your typed text is sent to AI providers (like Google Gemini) for processing but is never stored by BetterType. API keys and sensitive data are stored securely in iOS Keychain.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What data does BetterType collect?</div>
+                <div class="answer">BetterType collects:
+                    <ul>
+                        <li><strong>Never Collected:</strong> Your actual keyboard input/text content</li>
+                        <li><strong>Optionally Collected</strong> (if you enable "Help Improve"): Anonymous feature usage analytics, app integration data, subscription status</li>
+                        <li><strong>Always Secure:</strong> Payment information (handled by Apple), subscription details</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Which AI models does BetterType use?</div>
+                <div class="answer">BetterType uses state-of-the-art AI models from multiple providers:
+                    <ul>
+                        <li>Google Gemini (primary provider)</li>
+                        <li>Support for OpenAI, Anthropic Claude, and Grok models</li>
+                        <li>Different models are optimized for different tasks (grammar uses lightweight models, creative tasks use more capable models)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Does BetterType work offline?</div>
+                <div class="answer">No, BetterType requires an internet connection to access AI models for text processing. However, subscription validation has offline fallback to ensure the keyboard works even with temporary connection issues.</div>
+            </div>
+        </div>
+        
+        <!-- Keyboard Usage & Troubleshooting -->
+        <div class="category">
+            <h2 class="category-title">Keyboard Usage & Troubleshooting</h2>
+            
+            <div class="faq-item">
+                <div class="question">How do I switch between BetterType and my default keyboard?</div>
+                <div class="answer">Tap the globe icon 🌐 on your keyboard to cycle through all installed keyboards, including BetterType and your system keyboard.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">The keyboard isn't showing up. What should I do?</div>
+                <div class="answer">Check these common issues:
+                    <ul>
+                        <li>Ensure you've added BetterType in Settings → General → Keyboard → Keyboards</li>
+                        <li>Verify "Allow Full Access" is enabled</li>
+                        <li>Restart the app you're typing in</li>
+                        <li>Restart your iPhone if the issue persists</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Why can't I use Ask AI?</div>
+                <div class="answer">Ask AI is a premium feature available only to Pro subscribers. Upgrade your subscription in the app to unlock this feature.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">The keyboard feels slow. How can I fix this?</div>
+                <div class="answer">AI processing takes a few seconds. If it's unusually slow:
+                    <ul>
+                        <li>Check your internet connection</li>
+                        <li>Ensure you're on the latest version of BetterType</li>
+                        <li>Try restarting the app</li>
+                        <li>Contact support if the issue persists</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Can I use BetterType as my default keyboard?</div>
+                <div class="answer">Yes! iOS allows you to set BetterType as your primary keyboard, though you can always switch back using the globe icon. However, for security-sensitive fields (like passwords), iOS automatically switches to the system keyboard.</div>
+            </div>
+        </div>
+        
+        <!-- Account & Support -->
+        <div class="category">
+            <h2 class="category-title">Account & Support</h2>
+            
+            <div class="faq-item">
+                <div class="question">Do I need to create an account?</div>
+                <div class="answer">You can use BetterType with just your Apple ID for subscription management. Additional account features may be available for profile customization and settings sync.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I contact support?</div>
+                <div class="answer">For support, feedback, or questions, reach out through:
+                    <ul>
+                        <li>In-app support option</li>
+                        <li>Email: theredarrowapp@gmail.com</li>
+                        <li>Privacy Policy and Terms of Service available in the app settings</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What iOS version do I need?</div>
+                <div class="answer">BetterType requires iOS 18.2 or later. Always keep your iOS updated for the best experience.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Can I use BetterType on iPad?</div>
+                <div class="answer">BetterType is designed for iPhone but may work on iPad depending on the app configuration.</div>
+            </div>
+        </div>
+        
+        <!-- Tips & Best Practices -->
+        <div class="category">
+            <h2 class="category-title">Tips & Best Practices</h2>
+            
+            <div class="faq-item">
+                <div class="question">How can I get the best results from BetterType?</div>
+                <div class="answer">
+                    <ul>
+                        <li><strong>For Grammar:</strong> Type your message normally, then tap Grammar Fix</li>
+                        <li><strong>For Tone:</strong> Write your message first, then select the appropriate tone for your audience</li>
+                        <li><strong>For Ask AI:</strong> Be specific in your questions or requests</li>
+                        <li><strong>For Translation:</strong> Type in your native language, then select the target language</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What should I do during the onboarding challenges?</div>
+                <div class="answer">The onboarding includes 4 interactive demos to help you learn each feature. Complete them to understand how to use BetterType effectively in real situations.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Can I customize the tones?</div>
+                <div class="answer">Currently, BetterType offers 22 pre-configured tones optimized for different scenarios. Tone customization features may be added in future updates.</div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <h3>Still Have Questions?</h3>
+            <p>We're here to help! Reach out to our support team.</p>
+            <p><strong>Email:</strong> <a href="mailto:theredarrowapp@gmail.com" style="color: #6366F1; text-decoration: none;">theredarrowapp@gmail.com</a></p>
+            
+            <div class="footer-links">
+                <a href="https://isebastin.github.io/bettertype-docs/about.html">About</a>
+                <a href="https://isebastin.github.io/bettertype-docs/privacy.html">Privacy Policy</a>
+                <a href="https://isebastin.github.io/bettertype-docs/terms.html">Terms of Service</a>
+            </div>
+            
+            <p style="margin-top: 30px; color: #86868b; font-size: 14px;">© 2025 BetterType. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

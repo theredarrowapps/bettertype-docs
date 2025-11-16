@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - BetterType: AI Keyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero-mascot {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .hero-mascot img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        .hero .social-proof {
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-top: 30px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section {
+            margin-bottom: 80px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 15px;
+        }
+        
+        .section-header .tagline {
+            font-size: 20px;
+            color: #6366F1;
+            font-weight: 600;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: #6366F1;
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+        
+        .feature-card p {
+            color: #515154;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .feature-card .highlight {
+            color: #6366F1;
+            font-weight: 600;
+        }
+        
+        .apps-section {
+            background: #f8f9ff;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .apps-section h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .app-category {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        .app-category h4 {
+            color: #4F46E5;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .app-category p {
+            color: #515154;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .privacy-section {
+            background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .privacy-section h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .privacy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .privacy-item {
+            text-align: center;
+        }
+        
+        .privacy-item h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #6366F1;
+        }
+        
+        .privacy-item p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+        
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .stat {
+            padding: 20px;
+        }
+        
+        .stat .number {
+            font-size: 36px;
+            font-weight: 800;
+            color: #6366F1;
+            margin-bottom: 8px;
+        }
+        
+        .stat .label {
+            font-size: 16px;
+            color: #515154;
+            font-weight: 500;
+        }
+        
+        .how-it-works {
+            background: #f8f9ff;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .step {
+            text-align: center;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 15px;
+        }
+        
+        .step h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        
+        .step p {
+            color: #515154;
+            font-size: 15px;
+        }
+        
+        .personas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .persona {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 2px solid #f0f0f0;
+            text-align: center;
+        }
+        
+        .persona h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4F46E5;
+            margin-bottom: 10px;
+        }
+        
+        .persona p {
+            color: #515154;
+            font-size: 15px;
+        }
+        
+        .difference-list {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid #f0f0f0;
+            margin: 30px 0;
+        }
+        
+        .difference-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .difference-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 17px;
+            color: #1d1d1f;
+        }
+        
+        .difference-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .difference-list li::before {
+            content: "✓";
+            color: #6366F1;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        
+        .mission-section {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .mission-section h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .mission-section p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: #f8f9ff;
+            border-radius: 20px;
+        }
+        
+        .cta-section h2 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section .subtitle {
+            font-size: 20px;
+            color: #515154;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1d1d1f;
+            color: white;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #6366F1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer p {
+            color: #86868b;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero .subtitle {
+                font-size: 18px;
+            }
+            
+            .section-header h2 {
+                font-size: 28px;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-mascot">
+            <img src="fox-mascot.png" alt="BetterType Mascot">
+        </div>
+        <h1>Write 3x clearer in any app.</h1>
+        <p class="subtitle">
+            BetterType is your AI keyboard that fixes grammar, adjusts tone, and answers questions — all while you type. Whether you're crafting professional emails, creating social media captions, or chatting with friends, BetterType helps you communicate with confidence.
+        </p>
+        <p class="social-proof">Join 47,892 creators who've leveled up their communication.</p>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <div class="section-header">
+                <h2>What Makes BetterType Different</h2>
+                <p class="tagline">Zero Friction. Maximum Impact.</p>
+            </div>
+            
+            <p style="text-align: center; font-size: 18px; color: #515154; max-width: 800px; margin: 0 auto 40px;">
+                BetterType isn't just another keyboard — it's your personal writing assistant that works everywhere, instantly improving your writing with:
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Instant Grammar Fixes</h3>
+                    <p>Never hit send with a mistake again. <span class="highlight">Automatic, real-time grammar and spelling correction in under 2 seconds.</span></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Smart Tone Adjustment</h3>
+                    <p>Nail the vibe. Every message. Every time. <span class="highlight">Switch between friendly, formal, and custom tones with one tap.</span></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Built-in AI Assistant</h3>
+                    <p>ChatGPT, built right into your keyboard. <span class="highlight">Get 3 smart suggestions instantly for any question or prompt.</span></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Instant Translation</h3>
+                    <p>Speak any language instantly. <span class="highlight">Translate your messages without ever leaving the app.</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="apps-section">
+                <h3>Works Everywhere You Do</h3>
+                <p style="text-align: center; color: #515154; margin-bottom: 30px;">
+                    From messaging apps to professional platforms, BetterType integrates seamlessly with all your favorite apps:
+                </p>
+                
+                <div class="apps-grid">
+                    <div class="app-category">
+                        <h4>Social Media</h4>
+                        <p>Instagram, Twitter, TikTok, Snapchat</p>
+                    </div>
+                    
+                    <div class="app-category">
+                        <h4>Messaging</h4>
+                        <p>WhatsApp, iMessage, Telegram, Slack</p>
+                    </div>
+                    
+                    <div class="app-category">
+                        <h4>Professional</h4>
+                        <p>Gmail, Outlook, LinkedIn, Notion</p>
+                    </div>
+                    
+                    <div class="app-category">
+                        <h4>Dating</h4>
+                        <p>Tinder, Bumble, Hinge</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; color: #4F46E5; font-weight: 600; margin-top: 25px; font-size: 18px;">
+                    Your personal writing assistant — everywhere.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="privacy-section">
+                <h3>Privacy-First Design</h3>
+                <p style="text-align: center; font-size: 18px; max-width: 700px; margin: 0 auto 30px;">
+                    Your words are yours. BetterType is built with privacy at its core:
+                </p>
+                
+                <div class="privacy-grid">
+                    <div class="privacy-item">
+                        <h4>No User Tracking</h4>
+                        <p>We don't profile or track your behavior</p>
+                    </div>
+                    
+                    <div class="privacy-item">
+                        <h4>Local-First Data</h4>
+                        <p>Your information stays on your device</p>
+                    </div>
+                    
+                    <div class="privacy-item">
+                        <h4>Anonymous Usage</h4>
+                        <p>No account required to get started</p>
+                    </div>
+                    
+                    <div class="privacy-item">
+                        <h4>Secure Transmission</h4>
+                        <p>All data encrypted with HTTPS</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-size: 16px; margin-top: 30px; opacity: 0.9;">
+                    We only process the text you choose to improve. Nothing more.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <h2>Built for Speed & Simplicity</h2>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat">
+                    <div class="number">&lt;2s</div>
+                    <div class="label">Grammar fixes</div>
+                </div>
+                
+                <div class="stat">
+                    <div class="number">&lt;5s</div>
+                    <div class="label">Tone generation</div>
+                </div>
+                
+                <div class="stat">
+                    <div class="number">&lt;50MB</div>
+                    <div class="label">Memory usage</div>
+                </div>
+                
+                <div class="stat">
+                    <div class="number">100%</div>
+                    <div class="label">Native iOS</div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 18px; color: #515154; max-width: 700px; margin: 30px auto;">
+                <strong>Smart.</strong> Powered by OpenAI GPT-4o for context-aware suggestions that maintain your original intent.
+            </p>
+        </div>
+        
+        <div class="section">
+            <div class="how-it-works">
+                <h3 style="font-size: 32px; font-weight: 700; color: #1d1d1f; text-align: center; margin-bottom: 15px;">How It Works</h3>
+                <p style="text-align: center; color: #515154; margin-bottom: 30px;">Getting started with BetterType is simple:</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Customize Your Tones</h4>
+                        <p>Set up your preferred writing styles</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Open Any App</h4>
+                        <p>Works in messaging, social, email — anywhere</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Switch to BetterType</h4>
+                        <p>Select BetterType from your keyboard options</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Start Typing</h4>
+                        <p>Instant grammar fixes, tone adjustments, and AI assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <h2>Perfect For</h2>
+            </div>
+            
+            <div class="personas">
+                <div class="persona">
+                    <h4>Creators</h4>
+                    <p>Craft perfect captions, posts, and comments with AI-powered suggestions</p>
+                </div>
+                
+                <div class="persona">
+                    <h4>Professionals</h4>
+                    <p>Write polished emails and messages that make the right impression</p>
+                </div>
+                
+                <div class="persona">
+                    <h4>Communicators</h4>
+                    <p>Express yourself clearly in every conversation, every time</p>
+                </div>
+                
+                <div class="persona">
+                    <h4>Global Citizens</h4>
+                    <p>Break language barriers with instant translation</p>
+                </div>
+                
+                <div class="persona">
+                    <h4>Everyone</h4>
+                    <p>Because everyone deserves to write better</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <h2>The BetterType Difference</h2>
+                <p style="color: #515154; margin-top: 15px;">Unlike other keyboard apps, BetterType focuses on what matters most:</p>
+            </div>
+            
+            <div class="difference-list">
+                <ul>
+                    <li><strong>One-tap solutions</strong> - Choose from 3 instant options, no endless editing</li>
+                    <li><strong>Context-aware AI</strong> - Understands your message intent, not just grammar rules</li>
+                    <li><strong>Creator-focused</strong> - Built for people who write all day, every day</li>
+                    <li><strong>Truly private</strong> - No ads, no tracking, no compromises</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mission-section">
+            <h3>Our Mission</h3>
+            <p>
+                To create the most intuitive and powerful keyboard that instantly improves writing through automatic grammar correction and tone-based text enhancement, making every message better with zero friction.
+            </p>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Don't just type. Write better.</h2>
+            <p class="subtitle">Ready to transform your writing?</p>
+            <a href="#" class="cta-button">Get Started — No Credit Card Required</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:theredarrowapp@gmail.com">Contact</a>
+        </div>
+        <p>© 2025 BetterType. All rights reserved.</p>
+    </div>
+</body>
+</html>

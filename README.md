@@ -1,0 +1,1 @@
+# bettertype-docs
